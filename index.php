@@ -1,3 +1,5 @@
+<div style="font-size:14px;font-weight:bold;text-align:center;width:100%">
 <?php
-echo "ZHServices !!!!!!!!!!!!!!";
+echo "ZH HealthCare";
 ?>
+</div>
