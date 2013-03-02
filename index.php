@@ -1,5 +1,5 @@
 <?php
-
+echo "dddddddddddddddd";die;
 //$host='10.0.0.35';
 $host='75.101.232.88';
 $port  = '3306';
