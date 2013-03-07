@@ -12,7 +12,10 @@ $start=strtotime(date("Y-m-d H:i:s"));
 $str="Starttime           Endtime\r\n". date("Y-m-d H:i:s")."         ";
 $con=mysql_connect($host,$login,$pass);
 if(!$con)die("no connection");
-mysql_select_db($dbase,$con);
+$db_selected=mysql_select_db($dbase,$con);
+if (!$db_selected) {
+    die ('Cant use foo : ' . mysql_error());
+}
 //$sql="set profiling =1";
 //mysql_query($con,$sql);
 //$fh=fopen("/tmp/profile.txt",'a');
