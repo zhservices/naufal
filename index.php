@@ -1,7 +1,7 @@
 <?php
-//echo "dddddddddddddddd";die;
+
 //$host='10.0.0.35';
-$host='10.3.27.197';
+$host='10.3.27.197t';
 $port  = '3306';
 //$login  = 'superuser';
 $login  = 'root';
@@ -12,8 +12,6 @@ $start=strtotime(date("Y-m-d H:i:s"));
 $str="Starttime           Endtime\r\n". date("Y-m-d H:i:s")."         ";
 $con=mysql_connect($host,$login,$pass);
 if(!$con)die("no connection");
-//else echo "jabar";
-//die;
 mysql_select_db($dbase,$con);
 //$sql="set profiling =1";
 //mysql_query($con,$sql);
@@ -34,7 +32,6 @@ if(!$rs){echo "query not successfull";
 
 echo mysql_error($con);
 }
-
 while($row=mysql_fetch_array($rs)){
 //echo $row['pid']."nn<br>";
 
@@ -77,4 +74,3 @@ fclose($fh);
 //}
 echo $str;
 ?>
-
