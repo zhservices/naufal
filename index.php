@@ -12,6 +12,7 @@ $start=strtotime(date("Y-m-d H:i:s"));
 $str="Starttime           Endtime\r\n". date("Y-m-d H:i:s")."         ";
 $con=mysql_connect($host,$login,$pass);
 if(!$con)die("no connection");
+else echo "jabar";
 die;
 mysql_select_db($dbase,$con);
 //$sql="set profiling =1";
