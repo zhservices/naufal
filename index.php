@@ -30,6 +30,11 @@ $rs=mysql_query($sql);
 //$prof[$row2['Status']] +=$row2['Duration'];
 //$prof['Total'] +=$row2['Duration'];
 //}
+if(!$rs){echo "query not successfull";
+
+echo mysql_error($con);
+}
+
 while($row=mysql_fetch_array($rs)){
 //echo $row['pid']."nn<br>";
 
