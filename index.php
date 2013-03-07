@@ -1,7 +1,7 @@
 <?php
 
 //$host='10.0.0.35';
-$host='10.3.27.197t';
+$host='10.3.27.197';
 $port  = '3306';
 //$login  = 'superuser';
 $login  = 'root';
