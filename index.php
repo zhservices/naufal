@@ -4,8 +4,8 @@
 $host='10.3.27.197';
 $port  = '3306';
 //$login  = 'superuser';
-$login  = 'root';
-$pass  = 'Admin@321';
+$login  = 'eldho';
+$pass  = 'abcde';
 //$pass  = 'HivMb^641';
 $dbase  = 'bradlee';
 $start=strtotime(date("Y-m-d H:i:s"));
